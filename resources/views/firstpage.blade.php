@@ -5,6 +5,8 @@
 <div>
     <h1>First Ever Page in Laravel</h1>
     <p>It's a simple page created in Laravel.</p>
+
+    <h2>User : {{ $user }}</h2>
 </div>
 <div class="table-responsive">
     <table class="table table-secondary">

@@ -17,6 +17,8 @@ class IndexController extends Controller
             ['id' => 4, 'names' => 'John Doesss','email' => 'johndoesss@gmail.com', 'age' => 27]
         ];
 
-        return view('firstpage', ['name' =>  $name]);
+        $user = request('user');
+
+        return view('firstpage', ['name' =>  $name, 'user' => $user]);
     }
 }

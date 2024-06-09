@@ -1,0 +1,35 @@
+.table {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    table-layout: auto;
+}
+
+tbody td {
+white-space: nowrap; /* Prevent text wrapping */
+padding: 0; /* Remove default padding */
+margin: 0; /* Remove default margin */
+}
+.container {
+width: auto; /* Allow the container to take up only necessary width */
+overflow-x: auto; /* Ensure horizontal overflow for large content */
+}
+.dropdown-menu {
+margin: 0; /* Remove default margin from dropdown */
+}
+.dropdown {
+display: inline-block; /* Ensure the dropdown takes up only necessary width */
+}
+
+
+footer {
+    background-color: #134f8a;
+    padding: 25px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}

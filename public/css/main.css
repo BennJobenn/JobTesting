@@ -33,3 +33,27 @@ footer {
     font-size: 15px;
     font-weight: bold;
 }
+
+
+.row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divs
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 200px;
+}
+
+.img-fluid
+{
+    width: 100%;
+    height: 100%;
+}

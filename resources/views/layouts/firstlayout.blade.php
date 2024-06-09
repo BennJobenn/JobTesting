@@ -19,8 +19,11 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="divs">
                     <p class="text-center">footer testing in first page</p>
+                </div>
+                <div class="divs">
+                    <img src="{{ asset('img/PaulJovennSarmiento.png') }}" alt="logo" class="img-fluid">
                 </div>
             </div>
         </div>

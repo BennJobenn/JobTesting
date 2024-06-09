@@ -164,6 +164,9 @@
 
                     <footer class="py-16 text-center text-sm text-black dark:text-white/70">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
+                        <br>
+                        <a
+                            href="firstpage" style="color: blue">CLICK ME TO GO BACK</a>
                     </footer>
                 </div>
             </div>

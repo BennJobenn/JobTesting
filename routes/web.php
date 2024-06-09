@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\IndexController;
 
+//test comments for route controller
 Route::get('/', [IndexController::class, 'welcome']);
 
 Route::get('/firstpage', [IndexController::class, 'firstpage']);

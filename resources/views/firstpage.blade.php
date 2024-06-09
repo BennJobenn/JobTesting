@@ -20,13 +20,13 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($name as $users)
+            @foreach ($name as $lists)
             <tr class="table-primary">
-                <td class="table-danger"> {{ $loop->index}}</td>
-                {{-- <td class="table-danger"> {{ $users['id'] }}</td> --}}
-                <td class="table-success"> {{ $users['names'] }}</td>
-                <td class="table-warning"> {{ $users['email'] }}</td>
-                <td class="table-info"> {{ $users['age'] }}</td>
+                <td class="table-danger"> {{ $lists->id}}</td>
+                {{-- <td class="table-danger"> {{ $lists['id'] }}</td> --}}
+                <td class="table-success"> {{ $lists->name }}</td>
+                <td class="table-warning"> {{ $lists->email }}</td>
+                <td class="table-info"> {{ $lists->age }}</td>
 
                 <td> <button class="btn btn-danger">Delete</button> </td>
                 

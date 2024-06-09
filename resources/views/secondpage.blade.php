@@ -8,7 +8,10 @@
 <div>
 
     <h2>
-    User ID - {{ $id }}
+    <h3> ID: {{ $id->id }} </h3>
+    <h3> Name: {{ $id->name }} </h3>
+    <h3> Email: {{ $id->email }} </h3>
+    <h3> Age: {{ $id->age }} </h3>
     </h2>
     
 

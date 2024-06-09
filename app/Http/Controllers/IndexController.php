@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Lrvluser;
+
 class IndexController extends Controller
 {
     public function welcome()
@@ -11,12 +13,7 @@ class IndexController extends Controller
 
     public function firstpage()
     {
-        $name = [
-            ['id' => 1, 'names' => 'John Doe','email' => 'johndoe@gmail.com', 'age' => 24],
-            ['id' => 2, 'names' => 'John Does','email' => 'johndoes@gmail.com', 'age' => 25],
-            ['id' => 3, 'names' => 'John Doess','email' => 'johndoess@gmail.com', 'age' => 26],
-            ['id' => 4, 'names' => 'John Doesss','email' => 'johndoesss@gmail.com', 'age' => 27]
-        ];
+        $name = Lrvluser::all();
 
         $user = request('user');
 
@@ -25,6 +22,8 @@ class IndexController extends Controller
 
     public function secondpage($id)
     {
+
+        $id = Lrvluser::find($id);
         return view('secondpage', ['id' => $id]);
     }
 }

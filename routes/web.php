@@ -9,6 +9,8 @@ Route::get('/', [IndexController::class, 'welcome']);
 
 Route::get('/firstpage', [IndexController::class, 'firstpage']);
 
+Route::get('/secondpage/{id}', [IndexController::class, 'secondpage']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

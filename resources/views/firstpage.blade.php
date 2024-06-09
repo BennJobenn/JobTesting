@@ -22,7 +22,7 @@
         <tbody>
             @foreach ($name as $users)
             <tr class="table-primary">
-                <td class="table-danger"> {{ $loop->index + 1 }}</td>
+                <td class="table-danger"> {{ $loop->index}}</td>
                 {{-- <td class="table-danger"> {{ $users['id'] }}</td> --}}
                 <td class="table-success"> {{ $users['names'] }}</td>
                 <td class="table-warning"> {{ $users['email'] }}</td>

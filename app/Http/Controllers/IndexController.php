@@ -8,6 +8,7 @@ class IndexController extends Controller
     {
         return view('welcome');
     }
+
     public function firstpage()
     {
         $name = [
@@ -20,5 +21,10 @@ class IndexController extends Controller
         $user = request('user');
 
         return view('firstpage', ['name' =>  $name, 'user' => $user]);
+    }
+
+    public function secondpage($id)
+    {
+        return view('secondpage', ['id' => $id]);
     }
 }
